@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
 import pickle
-from PIL import Image
+#from PIL import Image
 import os.path
 
 plt.style.use('fivethirtyeight')
@@ -35,7 +35,7 @@ choice = st.sidebar.radio("go to",("About",'Vizualization','Insights','Predictio
 pickle.dump(new_choice.index(choice), open('next.p', 'wb'))
 
 ## Importing Images
-image=Image.open("A:\DS ML\Titanic Survival Prediction\Stöwer_Titanic.jpg")
+#image=Image.open("A:\DS ML\Titanic Survival Prediction\Stöwer_Titanic.jpg")
 
 pickle_in=open('Titanic.pkl','rb')
 clf=pickle.load(pickle_in)
@@ -82,7 +82,7 @@ def main():
     
     if choice=='About': 
         st.title("Titanic Survival Model")
-        st.image(image)
+        #st.image(image)
         st.write(''' 
         The sinking of the Titanic is one of the most infamous shipwrecks in history.
 
