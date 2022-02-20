@@ -105,7 +105,7 @@ Good Luck!
         
     if choice=='Insights':
         st.title("Insights drawn from the Data")
-        insights_path=Path(__file__).parents[1]/r"Titanic Survival Prediction\Insights.html"
+        insights_path="Insights.html"
         file=open(insights_path)
         line=file.readlines()
         for i in line:
